@@ -40,7 +40,7 @@ st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-setosa','Iris-versicolor','Iris-virginica'])
 st.write(pd.DataFrame({
     '0': "Iris-sentosa",
-    '1': "Iris-versicolor"
+    '1': "Iris-versicolor",
     '2': "Iris-virginica"}))
 
 st.subheader('Prediction')

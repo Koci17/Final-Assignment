@@ -42,9 +42,9 @@ df = pd.DataFrame(
     columns=('col %d' % i for i in range(5)))
 
 st.table(df)
-    0: "Iris-sentosa",
-    1: "Iris-versicolor",
-    2: "Iris-virginica"]
+    0: "Iris-sentosa"
+    1: "Iris-versicolor"
+    2: "Iris-virginica")]
          
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])

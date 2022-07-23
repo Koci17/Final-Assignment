@@ -20,6 +20,7 @@ def user_input_features():
             'petal_width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
+
 df = user_input_features()
 
 st.subheader('User Input parameters')
@@ -36,13 +37,11 @@ prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(iris.target_names)
-
 df = pd.DataFrame(
-    np.random.randn(10, 5),
-    columns=('col %d' % i for i in range(5)))
+    np.random.randn(4,4),
+    columns=('col %d' % i for i in range(4)))
 
-st.table(df)
+st.dataframe(df)  # Same as st.write(df)
          
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])

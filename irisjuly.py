@@ -37,9 +37,6 @@ prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-df = pd.DataFrame(
-    np.random.randn(4,4),
-    columns=('col %d' % i for i in range(4)))
 
 st.dataframe(df)  # Same as st.write(df)
          

@@ -20,7 +20,6 @@ def user_input_features():
             'petal_width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
-
 df = user_input_features()
 
 st.subheader('User Input parameters')
@@ -38,6 +37,13 @@ prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
+
+def user_input_features():
+    Iris_flower = st.sidebar.slider('0' , Iris-Setosa, Iris-Versicolor, Iris-Virginica)
+    data = {'Iris_flower' : 0,}
+    features =pd.DataFrame(data,index =[0])
+    return features
+df = user_input_features()
          
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])

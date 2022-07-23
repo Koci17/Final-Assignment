@@ -39,8 +39,8 @@ st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
 
 df = pd.DataFrame(
-    np.random.randn(3, 4),
-    columns=('col %d' % i for i in range of (4)))
+    np.random.randn(10, 5),
+    columns=('col %d' % i for i in range(5)))
 
 st.table(df)
          

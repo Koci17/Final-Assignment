@@ -11,6 +11,11 @@ st.write("""
 This app predics the **iris** flower type:
 """)
 
+from PIL import Image
+image = Image.open('iris-machinelearning.png')
+
+st.image(image, caption='Iris flower')
+
 # Creating a sidebar for getting input parameters
 st.sidebar.header('User Input Parameters')
 

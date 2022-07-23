@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
-# Creaing Heading and small description
+# Creating Heading and small description
 st.write("""
 # Simple Iris Flower Prediction App
 ## *Created by* **Stephanie Lenja**

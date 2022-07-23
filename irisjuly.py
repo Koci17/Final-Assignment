@@ -11,10 +11,6 @@ st.write("""
 This app predics the **iris** flower type:
 """)
 
-# import Image
-image = Image.open('photo-1589312397744-799d9f9c2944.webp')
-st.image(image,caption='Iris Flower')
-
 # Creating a sidebar for getting input parameters
 st.sidebar.header('User Input Parameters')
 

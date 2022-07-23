@@ -11,8 +11,9 @@ st.write("""
 This app predics the **iris** flower type:
 """)
 
-from PIL import Image
-# import image = Image.open('https://azkarohbiya.medium.com/iris-species-classification-using-k-neighbors-ae61cd145797')
+# import Image
+image = Image.open('https://azkarohbiya.medium.com/iris-species-classification-using-k-neighbors-ae61cd145797')
+st.image(image, caption='Iris Flower')
 
 # Creating a sidebar for getting input parameters
 st.sidebar.header('User Input Parameters')
